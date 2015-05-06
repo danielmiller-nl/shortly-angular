@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="container">
+        <a href="#/links" class="navbar-brand">Shortly</a>
+        <ul class="nav navbar-default nav-tabs navbar-nav navbar-right">
+            <li ng-class="{ active:tab === 1}"><a href="#/header/links" ng-click='tab=1'>Links</a></li>
+            <li ng-class="{ active:tab === 2}"><a href="#/header/shorten" ng-click='tab=2'>Create Link</a></li>
+            <li><a href="#/logout">Logout</a></li>
+        </ul>
+    </div>
+    <div ui-view class="container">
+    </div>
+</div>

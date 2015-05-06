@@ -1,0 +1,24 @@
+<div id='container'>
+
+
+    <!-- <div class="container">
+        <a href="#/links" class="navbar-brand">Shortly</a>
+        <ul class="nav navbar-default nav-tabs navbar-nav navbar-right">
+            <li ng-class="{ active:tab === 1}"><a href="#/links">Links</a></li>
+            <li ng-class="{ active:tab === 2}"><a href="#/shorten">Create Link</a></li>
+            <li><a href="#/logout">Logout</a></li>
+        </ul>
+    </div> -->
+
+    <form name="createLink" ng-submit='createLink.$valid && addLink()' novalidate>
+
+        <input name='url' type='url' ng-model='link.url' required="">
+        <button>Create</button>
+    </form>
+    <div class="col-md-4 alert alert-warning" ng-show="createLink.url.$error && createLink.url.$dirty"
+         ng-hide="createLink.$valid || createLink.url.$pristine">
+        Please enter valid a url!
+    </div>
+</div>
+
+

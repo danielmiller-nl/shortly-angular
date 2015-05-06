@@ -1,0 +1,11 @@
+<div id='signup' class="container">
+    <div class="col-md-offset-4">
+        <h1>Sign Up</h1>
+        <form name="signupForm" ng-submit='signupForm.$valid &&signup()'>
+            <input type='text' name='username' ng-model='user.username' required='' placeholder='username'>
+            <input type="password" name='password' ng-model='user.password' required='' placeholder='password'>
+            <button>signup</button>
+        </form>
+        <a href="#/signin">Already have an account? <strong>Signin</strong> ...</a>
+    </div>
+</div>

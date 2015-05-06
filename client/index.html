@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='shortly'>
+<head>
+    <meta charset="utf-8"/>
+    <title>Shortly</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap-theme.min.css"/>
+
+</head>
+<body>
+
+<!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
+<div ui-view class="container">
+</div>
+
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!-- <script src="lib/ngFx/dist/ngFxBundle.min.js"></script>
+<script src="lib/ngFx/dist/ngFx.min.js"></script> -->
+<script src="lib/angular-route/angular-route.min.js"></script>
+<script src="app/auth/auth.js"></script>
+<script src="app/links/links.js"></script>
+<script src="app/shorten/shorten.js"></script>
+<script src="app/header.js"></script>
+<script src="app/services/services.js"></script>
+<script src="app/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div>
+    <!-- <div class="container">
+        <a href="#/links" class="navbar-brand">Shortly</a>
+        <ul class="nav navbar-default nav-tabs navbar-nav navbar-right">
+            <li ng-class="{ active:tab === 1}"><a href="#/links">Links</a></li>
+            <li ng-class="{ active:tab === 2}"><a href="#/shorten">Create Link</a></li>
+            <li ng-class="{ active:tab === 3}"><a href="#/logout">Logout</a></li>
+        </ul>
+    </div> -->
+    <section class="col-md-offset-4">
+        <input type="text" ng-model="search" placeholder="Search by Title">
+    </section>
+    <table class="table">
+        <th>Title</th>
+        <th>URL</th>
+        <th>Short URL</th>
+        <th>Visits</th>
+        <tr ng-repeat='link in data.links | filter:{title: search}'>
+            <td>{{link.title}}</td>
+            <td>{{link.url}}</td>
+            <td><a href={{link.base_url+'/api/links/'+link.code}}>{{link.base_url+'/api/links/'+link.code}}</a></td>
+            <td>{{link.visits}}</td>
+        </tr>
+    </table>
+</div>
