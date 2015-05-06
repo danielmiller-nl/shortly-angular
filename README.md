@@ -1,2 +1,3 @@
 #shortly-angular
-This is a project I completed as a student at [hackreactor](http://hackreactor.com). This project was worked on with a pair.
+
+Shortly-angular shortens urls and saves them for users. A smaller imitation of bit.ly
